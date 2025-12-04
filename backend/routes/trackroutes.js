@@ -1,24 +1,22 @@
-// backend/routes/trackroutes.js  ←  FINAL CLOUDINARY VERSION
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const { uploadTrack, getAllTracks, streamTrack } = require('../controllers/trackcontroller');
 
-// Multer now ONLY saves to temp folder (Cloudinary will read from there)
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'temp_uploads/');  // any folder, will be deleted anyway
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + '-' + file.originalname);
+const upload = multer({
+  storage: multer.memoryStorage(), 
+  limits: { fileSize: 100 * 1024 * 1024 }, // 100MB
+  fileFilter: (req, file, cb) => {
+    const allowed = ['audio/mpeg', 'audio/wav', 'audio/mp3', 'audio/x-wav'];
+    if (allowed.includes(file.mimetype)) {
+      cb(null, true);
+    } else {
+      cb(new Error('Only MP3/WAV files allowed'));
+    }
   }
 });
 
-const upload = multer({ storage });
-
-// ONLY THIS LINE USES MULTER — Cloudinary reads the file from disk
 router.post('/upload', upload.single('music'), uploadTrack);
-
 router.get('/', getAllTracks);
 router.get('/file/:filename', streamTrack);
 
