@@ -8,7 +8,7 @@ https://mood-dj-psi.vercel.app/
 **Type “gym energy”, “sad rainy night”, “focus coding”, or any vibe — get the perfect playlist from YOUR music in seconds.**
 
 <div align="center">
-  <img src="assets/Screenshot 2025-12-04 130759" alt="MoodDJ Preview" width="100%"/>
+  <img src="myapp/src/assets/Screenshot 2025-12-04 130759.png" alt="MoodDJ Preview" width="100%"/>
 </div>
 
 
