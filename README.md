@@ -3,11 +3,11 @@
 # MoodDJ  
 **Your Personal AI-Powered Mood Playlist Generator**
 
-https://mood-dj-three.vercel.app
+https://mood-dj-psi.vercel.app/
 
 **Type “gym energy”, “sad rainy night”, “focus coding”, or any vibe — get the perfect playlist from YOUR music in seconds.**
 
-<img src="https://i.imgur.com/5ec3XKp.png" alt="MoodDJ Preview" width="100%"/>
+<img src="https://drive.google.com/file/d/1ed6X4gsQnRFtQEWvbYIsw4mXn4aUNXu6/view?usp=sharing" alt="MoodDJ Preview" width="100%"/>
 
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://mood-dj-three.vercel.app)
 [![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)](https://mooddj-backend.onrender.com)
@@ -52,12 +52,6 @@ Just upload a few songs and type:
 
 You’ll be amazed how smart it is.
 
-## Screenshots
-
-<div align="center">
-  <img src="https://i.imgur.com/8vL2mPq.png" width="48%" />
-  <img src="https://i.imgur.com/Jf9kR5t.png" width="48%" />
-</div>
 
 ## Setup (Local)
 
