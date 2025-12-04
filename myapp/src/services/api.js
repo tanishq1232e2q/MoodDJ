@@ -1,8 +1,7 @@
-// frontend/src/services/api.js  ←  FINAL WORKING VERSION
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', 
+  baseURL: 'https://mooddj-backend.onrender.com/api', 
   timeout: 30000,  // ← THIS IS THE FIX
   headers: {
     'Content-Type': 'application/json',
