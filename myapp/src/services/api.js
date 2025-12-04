@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: 'https://mooddj-backend.onrender.com/api', 
-  timeout: 30000,  // ← THIS IS THE FIX
+  timeout: 30000, 
   headers: {
     'Content-Type': 'application/json',
   }
